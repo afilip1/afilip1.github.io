@@ -1,0 +1,21 @@
+html, body {
+    color: #111;
+    background-color: #eee;
+    font-family: 'PT Serif';
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.narrow-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+main {
+    margin: 0 30px;
+}
+
+ul {
+    list-style-type: none;
+}
