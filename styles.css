@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    max-width: 720px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.7rem;
+    display: inline-block;
+    font-style: italic;
+    font-weight: normal;
+    background: #231f20;
+    color: white;
+    padding: 0 10px;
+}
+
+h3::before {
+    content: "//";
+    font-style: normal;
+    position: relative;
+    color: #d0c58d;
+    top: -2px;
+    left: -2px;
+}
+
+p {
+    margin: 16px 28px;
+}
+
+ul {
+    list-style: "— ";
+}
+
+li {
+    margin: 0 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 32px 0;
+}
+
+section {
+    margin: 48px 0;
+}
+
+section img {
+    margin: 0 4px 0 1px;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 30px;
+}
+
+header img {
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+    clip-path: circle(100px at center);
+}
