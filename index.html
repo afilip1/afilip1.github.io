@@ -4,82 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
 
     <title>Anton Filippov</title>
 </head>
 <body>
 
-<header>
-    <img src="img/me.jpg" alt="me" height="200"/>
+<div class="narrow-centered">
+    <header>
+        <img src="img/me.jpg" alt="me" height="200"/>
 
-    <div>
-        <h1>Anton Filippov</h1>
-        <h2>software developer</h2>
-    </div>
-</header>
+        <div class="title">
+            <h1>Anton Filippov</h1>
+            <p class="tagline">software developer</p>
+        </div>
+    </header>
 
-<main>
-    <section>
-        <h3>hello world</h3>
-        <p>
-            Hi! I'm Anton, a software developer based in Barnaul, Russia.
-        </p>
-        <p>
-            I've been programming since 2015, and in that time I have worked with many different
-            technology stacks, paradigms and areas of knowledge. I've tried my hand in everything
-            from web development to compiler design, and I am comfortable tackling most engineering
-            challenges.
-        </p>
-        <p>
-            I strive to write readable, maintainable, and performant code with clean architecture
-            and high test coverage.
-        </p>
-    </section>
+    <main>
+        <section class="block">
+            <h2>hello world</h2>
+            <div class="block-inner">
+                <p>
+                    Hi! I'm Anton, a software developer based in Barnaul, Russia.
+                </p>
+                <p>
+                    I've been programming since 2015, and in that time I have worked with many different
+                    technology stacks, paradigms and areas of knowledge. I've tried my hand in everything
+                    from web development to compiler design, and I am comfortable tackling most engineering
+                    challenges.
+                </p>
+                <p>
+                    I strive to write readable, maintainable, and performant code with clean architecture
+                    and high test coverage.
+                </p>
+            </div>
+        </section>
 
-    <section>
-        <h3>my skills</h3>
-        <p>
-            Currently I primarily use
-            <img src="img/kotlin.svg" alt="Kotlin logo" height="16px"/><strong>Kotlin</strong>
-            for desktop application development.
-        </p>
-        <p>
-            I have good experience and can quickly get up to speed with
-        </p>
-        <ul>
-            <li>
-                <strong>React</strong> and <strong>Vue.js</strong> for front-end development;
-            </li>
-            <li>
-                <strong>C/C++</strong> and <strong>Rust</strong> for close-to-the-metal programming;
-            </li>
-            <li>
-                and <strong>SQL</strong> for all my database needs.
-            </li>
-        </ul>
-        <p>
-            I haven't used in a while, but generally understand <strong>Haskell</strong> and <strong>Python</strong>.
-        </p>
-    </section>
+        <section class="block">
+            <h2>my skills</h2>
+            <div class="block-inner">
+                <p>
+                    Currently I primarily use
+                    <img src="img/kotlin.svg"
+                         alt="Kotlin icon"
+                         height="13"
+                         class="kotlin-icon"/><strong>Kotlin</strong>
+                    for desktop application development.
+                </p>
+                <p>
+                    I have good experience and can quickly get up to speed with
+                </p>
+                <ul>
+                    <li>
+                        <strong>React</strong> and <strong>Vue.js</strong> for front-end development;
+                    </li>
+                    <li>
+                        <strong>C/C++</strong> and <strong>Rust</strong> for close-to-the-metal programming;
+                    </li>
+                    <li>
+                        and <strong>SQL</strong> for all my database needs.
+                    </li>
+                </ul>
+                <p>
+                    I haven't used in a while, but generally understand
+                    <strong>Haskell</strong> and <strong>Python</strong>.
+                </p>
+            </div>
+        </section>
 
-    <section>
-        <h3>my projects</h3>
-        <ul>
-            <li>
-                jute
-            </li>
-            <li>
-                minekong
-            </li>
-            <li>
-                seekr
-            </li>
-        </ul>
-    </section>
-</main>
+        <section class="block">
+            <h2>my projects</h2>
+            <div class="block-inner">
+                <p>
+                    Over the years I have worked on numerous little projects, most of which you can find
+                    on my <a href="https://github.com/afilip1">GitHub</a> and
+                    <a href="https://gitlab.com/Yuurai">GitLab</a>. Here are some of the more notable ones:
+                </p>
+
+                <section class="project">
+                    <h3>Jute</h3> <a href="https://github.com/afilip1/jute">(github)</a>
+                    <p>
+                        A toy programming language made in ~1000 lines of C. Features basic type checking
+                        and native execution via LLVM. I had hoped to make a modern successor to C, but alas,
+                        writing a compiler in C turned out to be pretty painful. Well, at least it can
+                        handle Fizzbuzz.
+                    </p>
+                    <img src="img/jute.png" alt="An example of Jute source code" width="397"/>
+                </section>
+
+                <section class="project">
+                    <h3>Minekong</h3> <a href="https://github.com/afilip1/minesweeper">(github)</a>
+                    <p>
+                        An aesthetically pleasing implementation of good old Minesweeper in React/Redux.
+                        Supports both mouse- and touch-optimized control schemes. Made with the purpose
+                        of learning React, but it's honestly quite addictive. Just don't ask about the name.
+                    </p>
+                    <video src="img/minekong.m4v" autoplay muted width="100%" loop></video>
+                </section>
+
+                <section class="project">
+                    <h3>Seekr</h3> <a href="https://github.com/afilip1/Seekr">(github)</a>
+                    <p>
+                        A simple file browser written in Kotlin with TornadoFX. Supports navigation history,
+                        deleting and renaming files, updating on detecting external changes and other fancy
+                        things. Also a learning project, but it works well.
+                    </p>
+                    <img src="img/seekr.png" alt="Seekr window screenshot" width="802" />
+                </section>
+            </div>
+        </section>
+    </main>
+</div>
 
 </body>
 </html>
