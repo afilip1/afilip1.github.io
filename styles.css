@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', "Noto Sans JP", sans-serif;
+}
+
+a {
+    color: #d0c58d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3rem;
-    margin-top: 10px;
 }
 
 .tagline {
@@ -24,20 +32,20 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7rem;
     display: inline-block;
+    padding: 0 10px;
+    font-size: 1.7rem;
     font-style: italic;
     font-weight: normal;
-    background: #231f20;
     color: white;
-    padding: 0 10px;
+    background: #231f20;
 }
 
 h2::before {
     content: "//";
     font-style: normal;
-    position: relative;
     color: #d0c58d;
+    position: relative;
     top: -2px;
     left: -2px;
 }
@@ -46,6 +54,51 @@ h3 {
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 4px;
+}
+
+.narrow-centered {
+    max-width: 720px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    padding: 0 30px;
+}
+
+header img {
+    height: 200px;
+    width: 200px;
+    clip-path: circle(100px at center);
+}
+
+.title {
+    margin-top:10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+main {
+    font-size: 1.1rem;
+}
+
+.block {
+    margin: 48px 0;
+}
+
+.block:last-of-type {
+    margin-bottom: 32px;
 }
 
 .block-inner {
@@ -59,33 +112,6 @@ ul {
 
 li {
     margin: 6px 30px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 32px 0;
-    padding: 0 30px;
-}
-
-main {
-    font-size: 1.1rem;
-}
-
-a {
-    color: #d0c58d;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.block {
-    margin: 48px 0;
 }
 
 .project {
@@ -104,20 +130,24 @@ a:hover {
     margin: 0 2px;
 }
 
-.narrow-centered {
-    max-width: 720px;
-    margin: auto;
+.japan-flag {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    position: relative;
+    top: 2px;
+    margin-left: 4px;
 }
 
-.projects-list {
-    list-style: none;
-    padding: 0;
+iframe {
+    border: none;
+    margin-bottom: 10px;
 }
 
-header img {
-    height: 200px;
-    width: 200px;
-    clip-path: circle(100px at center);
+footer {
+    opacity: 0.7;
+    margin: 0 28px 28px;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
 }
 
 @media screen and (min-width: 560px) {
@@ -128,5 +158,9 @@ header img {
 
     header img {
         margin-right: 20px;
+    }
+
+    footer {
+        margin: 64px 0 28px;
     }
 }
